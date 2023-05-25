@@ -1,0 +1,38 @@
+.you-have-to-pay-container {
+  /* border: solid blue; */
+  margin-top: 20px;
+  display: flex;
+  /* gap: 5px; */
+}
+.pay {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.price {
+  font-size: 40px;
+  font-weight: 700;
+}
+.span-1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.span-2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+@media screen and (max-width: 999.9px) {
+  .pay {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 30px;
+  }
+  .span-1 {
+    font-size: 13px;
+  }
+  .span-2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,80 @@
+.card-number {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-number-title-icon-container {
+  display: flex;
+  gap: 50px;
+}
+.card-number-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-number-title > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-number-title > span {
+  font-size: 12px;
+  font-weight: 300;
+}
+/* .card-number-icon {
+} */
+.card-input-container {
+  margin-top: 0.25rem;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 2px solid rgb(240, 240, 240);
+}
+.card-input-container > input {
+  flex: 1;
+  outline: none;
+  padding: 10px 20px;
+  border: 0;
+}
+.card-input-container:focus-within {
+  border-color: var(--colorblue);
+}
+.mastercard-img {
+  width: 20px;
+  height: 20px;
+  /* margin-top: ; */
+}
+.card-number-icon {
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+}
+.card-number-icon > p {
+  color: var(--colorblue);
+}
+@media screen and (max-width: 999.9px) {
+  .card-number {
+    margin-bottom: 1rem;
+  }
+  .card-number-title > p {
+    font-size: 15px;
+  }
+  .card-number-title > span {
+    font-size: 11px;
+  }
+  .card-input-container {
+    padding: 0 10px;
+    gap: 5px;
+  }
+  .card-input-container > input {
+    padding: 10px 2px;
+    /* border: solid red; */
+  }
+  button {
+    display: none;
+  }
+}

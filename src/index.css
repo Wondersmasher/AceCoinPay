@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+  /* Variables */
+  --colorblue: #4d95bc;
+  --colorwhite: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+.app {
+  background-color: var(--colorwhite);
+}
+.the-app {
+  background-color: var(--colorblue);
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* border: solid red; */
+}
+@media screen and (max-width: 699.9px) {
+  .the-app {
+    padding: 2rem;
+  }
+}

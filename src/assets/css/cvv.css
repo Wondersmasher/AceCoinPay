@@ -1,0 +1,69 @@
+.cvv-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* border: solid red; */
+}
+.cvv-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* border: solid red; */
+}
+.cvv-title > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cvv-title > span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.cvv-input-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 
+   */
+  width: 100%;
+  gap: 20px;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 2px solid rgb(240, 240, 240);
+}
+.cvv-input-container > input {
+  flex: 1;
+  outline: none;
+  padding: 10px 5px;
+  border: 0;
+}
+.cvv-input-container:focus-within {
+  border-color: var(--colorblue);
+}
+@media screen and (max-width: 999.9px) {
+  .cvv-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 1rem;
+    /* justify-content: flex-start; */
+  }
+  .cvv-title > p {
+    font-size: 15px;
+  }
+  .cvv-title > span {
+    font-size: 11px;
+  }
+  .cvv-input-container {
+    padding: 0 10px;
+    gap: 5px;
+  }
+  .cvv-input-container > input {
+    padding: 10px 5px;
+    /* border: solid red; */
+  }
+}

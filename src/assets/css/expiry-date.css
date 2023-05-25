@@ -1,0 +1,70 @@
+.expiry-date-container {
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+.expiry-date-title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* width: 50%; */
+  /* justify-content: center;
+  align-items: center; */
+}
+.expiry-date-title > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.expiry-date-title > span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.expiry-date-input-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  /* padding: 0 10px; */
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+}
+.expiry-date-input-container > input:focus-within {
+  border-color: var(--colorblue);
+}
+.expiry-date-input-container > input {
+  /* flex: 1; */
+  width: 50%;
+  outline: none;
+  /* border: 0; */
+  border: 2px solid rgb(240, 240, 240);
+  padding: 10px 0;
+  border-radius: 5px;
+  /* background-color: transparent; */
+}
+@media screen and (max-width: 999.9px) {
+  .expiry-date-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 1rem;
+    /* justify-content: flex-start; */
+  }
+  .expiry-date-title > p {
+    font-size: 15px;
+  }
+  .expiry-date-title > span {
+    font-size: 11px;
+  }
+  .expiry-date-input-container {
+    padding: 0;
+    gap: 5px;
+  }
+  .expiry-date-input-container > input {
+    padding: 10px 5px;
+  }
+}

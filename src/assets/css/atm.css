@@ -1,0 +1,54 @@
+.atm-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.card-atm-and-wifi {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.atm-name {
+  /* text-align: center; */
+  font-size: 15px;
+}
+.atm-pin {
+  font-weight: 700;
+  font-size: 20px;
+}
+.expiry-date-mastercard-container {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+.expiry-date-mastercard-container > p {
+  font-weight: 700;
+  font-size: 15px;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1px; */
+}
+img {
+  width: 50px;
+  height: 50px;
+  /* margin-top: ; */
+}
+.image > p {
+  margin-top: -10px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 999.9px) {
+  .atm-name {
+    font-size: 13px;
+  }
+  .atm-pin {
+    font-size: 17px;
+  }
+}
