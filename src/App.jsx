@@ -25,9 +25,11 @@ function App() {
   };
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(typeof +cardNumber);
     if (
-      cardNumber &&
-      cvv.length > 3 &&
+      cardNumber >= 12 &&
+      typeof +cardNumber === "number" &&
+      cvv.length >= 3 &&
       expiryDate.length === 2 &&
       expiryDate2.length === 2 &&
       password >= 8

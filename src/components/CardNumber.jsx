@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/card-number.css";
 import { Bag, Pen, Verified } from "../assets/svg/Svg";
-const CardNumber = ({ handleCardNumberChange , CardNumber}) => {
+const CardNumber = ({ handleCardNumberChange, CardNumber }) => {
   return (
     <div className="card-number">
       <div className="card-number-title-icon-container">
@@ -20,7 +20,14 @@ const CardNumber = ({ handleCardNumberChange , CardNumber}) => {
           alt="mastercard"
           className="mastercard-img"
         />
-        <input type="text" value={CardNumber} onChange={handleCardNumberChange} id="card-number" name="card-number"/>
+        <input
+          type="text"
+          value={CardNumber}
+          onChange={handleCardNumberChange}
+          id="card-number"
+          name="card-number"
+          placeholder=" 2324 - 2323 - 2323 - 2323"
+        />
         <Verified />
       </div>
     </div>
